@@ -11,7 +11,7 @@ env:
   REGISTRY_ORG: ${{ secrets.DOCKER_USERNAME }}
 
 jobs:
-  build image and push:
+  build-img-push:
     runs-on: ubuntu-latest
 
     steps:
