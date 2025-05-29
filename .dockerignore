@@ -3,3 +3,5 @@
 Dockerfile
 README.md
 main.yml
+deploy.yml
+k8s
