@@ -22,7 +22,8 @@ jobs:
     - name: Deploy to GCP VM
       run: |
         ssh -o StrictHostKeyChecking=no -i key.pem ${{ secrets.GCP_SSH_USER }}@${{ secrets.GCP_SSH_HOST }} << 'EOF'
+          git clone https://github.com/mkputra/lacak-devops-test.git ~/app-deployment
           cd ~/app-deployment
           git pull origin main
-          kubectl apply -f k8s/deployment.yaml
+          sudo kubectl apply -f k8s/deployment.yaml
         EOF
