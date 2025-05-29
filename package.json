@@ -1,0 +1,22 @@
+{
+  "name": "hello-world-app",
+  "version": "1.0.0",
+  "description": "Minimal Hello World web service for CI/CD & k3s demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "mocha": "^10.2.0",
+    "chai": "^4.4.1",
+    "supertest": "^6.3.4"
+  }
+}
