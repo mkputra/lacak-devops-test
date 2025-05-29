@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-container
-        image: mkurnaip/hello-world-app
+        image: mkurnaip/hello-world-app:${{ github.sha }}
         ports:
         - containerPort: 3000
 
